@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favorite Chocolate</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 50px 20px;
+      color: #4b2e05;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+    button {
+      background-color: #a0522d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 15px 35px;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #6b3a14;
+    }
+    img {
+      margin-top: 30px;
+      max-width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(165, 100, 50, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>Do you have two A's in your name?</h1>
+  
+  <button onclick="location.href='ggp.html?answer=yes'">Yes</button>
+  <button onclick="location.href='ggp.html?answer=no'">No</button>
+
+  <div>
+    <img src="data:image/png;base64,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" alt="">
+  </div>
+</body>
+</html>
